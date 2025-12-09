@@ -1,3 +1,46 @@
+
+/* --- LAYOUT GERAL --- */
+body {
+  font-family: "Georgia", serif;
+  background-color: #f9f8f6;
+  color: #222;
+  margin: 0;
+  padding: 0;
+}
+
+/* --- CABEÇALHO --- */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 60px;
+}
+
+.logo {
+  font-weight: 600;
+  font-size: 1.2em;
+  letter-spacing: 2px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #a07763;
+}
+
 /* --- HOME --- */
 #home {
   text-align: center;
@@ -5,23 +48,21 @@
 }
 
 #home h2 {
-  font-family: "Georgia", serif;
   font-size: 2rem;
-  color: #222;
   margin-bottom: 40px;
   letter-spacing: 1px;
 }
 
-/* --- GALERIA --- */
-.gallery {
+/* --- GALERIA DE IMAGENS --- */
+.galeria {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
-  gap: 30px;
+  gap: 40px;
+  flex-wrap: nowrap;
 }
 
-.gallery img {
+.galeria img {
   width: 300px;
   height: auto;
   border-radius: 8px;
@@ -30,6 +71,33 @@
   cursor: pointer;
 }
 
-.gallery img:hover {
+.galeria img:hover {
   transform: scale(1.03);
+}
+
+/* --- DEPOIMENTOS --- */
+#depoimentos {
+  text-align: center;
+  margin-top: 80px;
+  padding: 60px 0;
+}
+
+#depoimentos h2 {
+  font-size: 1.6rem;
+  margin-bottom: 30px;
+}
+
+.depoimento {
+  max-width: 600px;
+  margin: 0 auto;
+  font-style: italic;
+  line-height: 1.6;
+}
+
+/* --- RODAPÉ --- */
+footer {
+  text-align: center;
+  padding: 40px 0;
+  font-size: 0.9rem;
+  color: #666;
 }
