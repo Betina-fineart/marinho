@@ -266,3 +266,9 @@ footer {
     background: var(--accent);
   }
 }
+img {
+  max-width: 100%;   /* faz a imagem não ultrapassar 100% do contêiner */
+  width: auto;       /* permite a imagem encolher ou manter proporção */
+  height: auto;      /* mantém a proporção correta */
+  display: block;    /* evita espaços extras indesejados */
+}
