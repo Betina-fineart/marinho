@@ -96,4 +96,39 @@ nav.menu a:hover {
   nav ul {
     display: none;
   }
+}@media (max-width: 768px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+    background-color: #f9f8f6;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  /* mostra o menu quando clicar no ícone */
+  #menu-toggle:checked + .menu-icon + nav ul {
+    display: flex;
+  }
+
+  .menu-icon {
+    display: block;
+    position: absolute;
+    right: 40px;
+    top: 35px;
+    cursor: pointer;
+  }
+
+  .menu-icon span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 5px 0;
+    transition: 0.4s;
+  }
 }
+
